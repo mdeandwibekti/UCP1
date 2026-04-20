@@ -112,7 +112,10 @@ def get_detail(link):
         if isi_berita:
             isi_lower = isi_berita.lower()
             if not any(k in isi_lower for k in [
-                "lingkungan", "iklim", "energi", "emisi", "sustainability", "green"
+                "lingkungan", "perubahan iklim", "iklim", "climate change",
+                "pemanasan global", "global warming",
+                "emisi", "karbon", "net zero",
+                "sustainability", "sustainable", "green",
             ]):
                 return None
 
